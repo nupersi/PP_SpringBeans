@@ -12,13 +12,14 @@ public class AnimalsCage {
     @Qualifier("dog")
     private Animal animal;
 
+    @Autowired
     Timer timer;
 
 
-    @Autowired
-    public AnimalsCage (Timer timer) {
-        this.timer = timer;
-    }
+//    @Autowired
+//    public AnimalsCage (Timer timer) {
+//        this.timer = timer;
+//    }
 
     public void whatAnimalSay() {
         System.out.println("Say:");
